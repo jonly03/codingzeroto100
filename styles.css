@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.active_nav_link {
+    border-bottom: 2px solid brown;
+}
+
+.content {
+    position: relative;
+    top: 5em;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.menu_items {
+    justify-content: flex-end;
+}
+
+.container {
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 2em;
+    color: white;
+}
+
+#classes {
+    background-color: teal;
+}
+
+#classes_outter_container {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#classes_inner_container {
+    height: fit-content;
+
+}
+
+#classes_inner_container,
+#free,
+#paid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+    margin: 10px;
+}
+
+#free,
+#paid {
+    max-width: 500px;
+}
+
+.class_photo {
+    width: 100%;
+}
+
+.flip-clock-wrapper {
+    margin: 0;
+}
+
+.timer_container {
+    display: flex;
+    justify-content: center;
+}
+
+.timer {
+    margin-top: 25px;
+}
+
+.call_to_action {
+    margin: 20px;
+    font-size: xx-large
+}
+
+#tutor,
+#signup {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.tutor,
+.signup {}
+
+#tutor {
+    background-color: brown;
+}
+
+#signup {
+    background-color: darkturquoise;
+}
+
+#onboard {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column
+}
+
+#expectations,
+#projects,
+#tech {
+    background-color: chocolate;
+}
+
+.onboard_outter_container {
+    overflow-y: scroll;
+    height: 63%;
+}
+
+.onboard_brochure {
+    width: 100%;
+}
+
+@media screen and (min-width: 893px) {
+    #classes_inner_container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #onboard {
+        flex-direction: row;
+    }
+}

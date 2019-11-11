@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodingZeroTo100</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./flipclock/flipclock.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./resources/logo.png" width="70" height="50" alt="">
+        </a>
+
+        <button id="hamburger_menu_toggler" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu_items" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#classes">Classes</a>
+                <a class="nav-item nav-link" href="https://jonly03.github.io/" target="_blank"
+                    rel="noopener noreferrer">Instructor</a>
+                <a class="nav-item nav-link" href="#expectations">Expectations</a>
+                <a class="nav-item nav-link" href="#projects_overview">Projects Overview</a>
+                <a class="nav-item nav-link" href="#tech">Technologies</a>
+                <a class="nav-item nav-link" href="#signup">Learn</a>
+                <a class="nav-item nav-link" href="#tutor">Tutor</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid content">
+        <div id="classes">
+            <h1 class="heading">CLASSES</h2>
+                <div id="classes_outter_container">
+                    <div id="classes_inner_container">
+                        <div id="free">
+                            <img class='class_photo' src="./resources/kigali.png" alt="" srcset="">
+                            <div class="timer_container">
+                                <div class="timer" id="kigali_timer"></div>
+                            </div>
+                            <a id="tutor_kgl" href="#tutor" class="btn btn-dark call_to_action">Volunteer to mentor</a>
+                        </div>
+                        <div id="paid">
+                            <img class='class_photo' src="./resources/portfolio.png" alt="">
+                            <div class="timer_container">
+                                <div class="timer" id="portfolio_timer"></div>
+                            </div>
+                            <a id="sign_up_portfolio" href="#signup" class="btn btn-dark call_to_action">Learn with
+                                us</a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <div id="onboard">
+            <div id="expectations" class="container">
+                <h1 class="heading">WHAT TO EXPECT FROM OUR CLASSES</h1>
+                <div class="onboard_outter_container">
+                    <div class="onboard_inner_container">
+                        <img class="onboard_brochure" src="./resources/What To Expect.PNG" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div id="projects" class="container">
+                <h1 class="heading">FIRST HALF PROJECTS OVERVIEW</h1>
+                <div class="onboard_outter_container">
+                    <div class="onboard_inner_container">
+                        <img class="onboard_brochure" src="./resources/Projects Overview.PNG" alt="" id="projects">
+                    </div>
+                </div>
+            </div>
+            <div id="tech" class="container">
+                <h1 class="heading">FIRST HALF TECHNOLOGIES OVERVIEW</h1>
+                <div class="onboard_outter_container">
+                    <div class="onboard_inner_container">
+                        <img class="onboard_brochure" src="./resources/Technologies.PNG" alt="" id="projects">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="signup">
+            <h1 class="heading">SIGN UP TO LEARN WITH US</h2>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSffD7RHfTutiFv_eFS32Ao2MWJo4x9vSCAxiacqCKf0babnrQ/viewform?embedded=true"
+                    width="100%" height="2084" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div id="tutor">
+            <h1 class="heading">VOLUNTEER TO MENTOR STUDENTS IN KIGALI (Jan 7 - Jan 30)</h2>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSewQVJAjNvtCuJABqmkZePFc7xIUL086LKO-sO0GcB1-png2w/viewform?embedded=true"
+                    width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div id="team"></div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="./flipclock/flipclock.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
